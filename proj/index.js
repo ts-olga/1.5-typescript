@@ -13,7 +13,7 @@ plus.addEventListener('click', () => {
 
 minus.addEventListener('click', () => {
   const currentTime = +time.innerHTML;
-  if (!(currentTime <= 1)) {
+  if (!(currentTime <= 1) {
     time.innerHTML = String(currentTime - 1);
   }
 });
