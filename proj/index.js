@@ -13,13 +13,13 @@ plus.addEventListener('click', () => {
 
 minus.addEventListener('click', () => {
   const currentTime = +time.innerHTML;
-  if (!(currentTime <= 1) {
+  if (!(currentTime <= 1)) {
     time.innerHTML = String(currentTime - 1);
   }
 });
 
 start.addEventListener('click', () => {
-  manageButtons();
+  manageButtons(;
 
   let timeLeft = moment.duration(time.innerHTML * 60 * 1000 - 1000);
   const interval = setInterval(() => {
