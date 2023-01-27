@@ -19,7 +19,7 @@ minus.addEventListener('click', () => {
 });
 
 start.addEventListener('click', () => {
-  manageButtons(;
+  manageButtons();
 
   let timeLeft = moment.duration(time.innerHTML * 60 * 1000 - 1000);
   const interval = setInterval(() => {
