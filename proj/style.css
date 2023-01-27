@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  margin: 50px;
+  font-size: 60px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+}
+
+.timer-btn {
+  margin: 0 50px;
+}
+
+p {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.start-btn {
+  padding: 10px 40px;
+  font-size: 25px;
+}
