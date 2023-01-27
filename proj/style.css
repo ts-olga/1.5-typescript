@@ -1,9 +1,10 @@
 body {
   text-align: center;
+  font-family: 'Baloo 2', cursive;
 }
 
 h1 {
-  margin: 50px;
+  margin: 40px;
   font-size: 60px;
 }
 
@@ -14,8 +15,12 @@ h1 {
   align-items: center;
 }
 
-.timer-btn {
-  margin: 0 50px;
+#minus-min,
+#plus-min {
+  margin: 0 80px;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 p {
@@ -24,7 +29,14 @@ p {
   margin: 0;
 }
 
-.start-btn {
+#start-btn {
   padding: 10px 40px;
   font-size: 25px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.hidden {
+  display: none;
 }

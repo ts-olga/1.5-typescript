@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css" />
     <title>Timer</title>
   </head>
   <body>
     <h1>Timer</h1>
-    <h3>Укажите время в минутах</h3>
+    <h3 id="text">Укажите время в минутах</h3>
     <div class="timer">
-      <button class="timer-btn">-</button>
-      <p>5</p>
-      <button class="timer-btn">+</button>
+      <button id="minus-min">-</button>
+      <p id="time">5</p>
+      <button id="plus-min">+</button>
     </div>
-    <button class="start-btn">Start</button>
+    <button id="start-btn">Start</button>
+
+    <script src="moment/min/moment.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
