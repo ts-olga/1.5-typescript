@@ -17,7 +17,7 @@ function showHello(divName, name) {
     var elt = document.getElementById(divName);
     elt.innerText = (0, greet_1.sayHello)(name);
 }
-showHello('greeting', 'Olya');
+showHello('greeting', 'TypeScript');
 
 },{"./greet":1}]},{},[2])
 
