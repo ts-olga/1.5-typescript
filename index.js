@@ -1,24 +1,24 @@
-const start = document.getElementById('start-btn');
-const plus = document.getElementById('plus-min');
-const minus = document.getElementById('minus-min');
+const startBtn = document.getElementById('start-btn');
+const plusBtn = document.getElementById('plus-min');
+const minusBtn = document.getElementById('minus-min');
 const time = document.getElementById('time');
 const text = document.getElementById('text');
 
-plus.addEventListener('click', () => {
+plusBtn.addEventListener('click', () => {
   const currentTime = +time.innerHTML;
   if (!(currentTime > 59)) {
-    time.innerHTML = String(currentTime + 1);
+    time.innerHTML = currentTime + 1;
   }
 });
 
-minus.addEventListener('click', () => {
+minusBtn.addEventListener('click', () => {
   const currentTime = +time.innerHTML;
   if (!(currentTime <= 1)) {
-    time.innerHTML = String(currentTime - 1);
+    time.innerHTML = currentTime - 1;
   }
 });
 
-start.addEventListener('click', () => {
+startBtn.addEventListener('click', () => {
   manageButtons();
 
   let timeLeft = moment.duration(time.innerHTML * 60 * 1000 - 1000);
@@ -36,10 +36,10 @@ start.addEventListener('click', () => {
 });
 
 function manageButtons() {
-  start.classList.toggle('hidden');
-  plus.classList.toggle('hidden');
-  minus.classList.toggle('hidden');
-  text.innerHTML = start.classList.contains('hidden')
+  startBtn.classList.toggle('hidden');
+  plusBtn.classList.toggle('hidden');
+  minusBtn.classList.toggle('hidden');
+  text.innerHTML = startBtn.classList.contains('hidden')
     ? 'Осталось'
     : 'Укажите время в минутах';
 }
