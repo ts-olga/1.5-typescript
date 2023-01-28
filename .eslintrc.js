@@ -13,3 +13,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {},
 };
+
+module.exports = {
+  extends: 'airbnb-base',
+};
